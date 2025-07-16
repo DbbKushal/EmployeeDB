@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="boxwrap">
+    <h2>Add New Employee</h2>
+    <form action="insert.php" method="post">
+      <input type="text" name="name" placeholder="Employee Name">
+      <select name="role">
+        <option value="">Select Role</option>
+        <option value="Developer">Developer</option>
+        <option value="Designer">Designer</option>
+        <option value="Manager">Manager</option>
+        <option value="HR">HR</option>
+      </select>
+      <input type="number" name="salary" placeholder="Enter Salary">
+      <button type="submit">Save</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <div class="goto">
+      <a href="view.php">View All Employees</a>
+    </div>
+  </div>
+</body>
+</html>
